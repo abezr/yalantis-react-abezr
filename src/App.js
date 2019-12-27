@@ -50,7 +50,7 @@ function App() {
   const monthName = new Date(records[0].dob).toLocaleString("default", { month: "long" });
   const isCurMonthActive = m[0] === activeMonth;
   const monthStyle = {
-    border: `1px solid ${isCurMonthActive ? 'gold' : 'none'}`,
+    border: `2px solid ${isCurMonthActive ? 'orange' : 'none'}`,
     background: colorByUsersNumber(records.length)
 };
   return <li key={m[0]+isCurMonthActive} style={monthStyle}
